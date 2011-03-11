@@ -10,11 +10,11 @@
 /**
  * The ESitemapModel maps the class configuration options to
  * the actual data records and interprets that informaiton for use
- * by the sitemap processor. 
+ * by the sitemap processor
  *
  * @author Dana Luther <dluther@internationalstudent.com>
  * @copyright (c) Envisage International, Corp.
- * @version 1.0
+ * @version 1.1
  */
 class ESitemapModel extends CModel {
 
@@ -54,8 +54,7 @@ class ESitemapModel extends CModel {
 	 * @access private
 	 */
 	protected $_pathFormat;
-
-
+	
 	/**
 	 * Rules for the model
 	 * @return array[] validation rule configurations
@@ -64,7 +63,7 @@ class ESitemapModel extends CModel {
 	{
 		return array(
 			array('frequency,priority,route,baseModel,scopeName','required'),
-			array('params', 'safe')
+			array('params,import', 'safe')
 		);
 	}
 
@@ -122,6 +121,7 @@ class ESitemapModel extends CModel {
 	 */
 	public function loc( $model )
 	{
+
 		if ( $model === null )
 		{
 			throw new CException('No model set for path.');

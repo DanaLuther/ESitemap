@@ -28,7 +28,7 @@ Yii::import('ext.sitemap.*');
  * </pre>
  *
  * @author Dana Luther <dluther@internationalstudent.com>
- * @version 1.0
+ * @version 1.1
  */
 class ESitemapXMLAction extends ESitemapAction {
 

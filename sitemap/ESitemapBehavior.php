@@ -9,7 +9,7 @@
  * Description of ESitemapBehavior 
  *
  * @author Dana Luther <dluther@internationalstudent.com>
- * @version 1.0
+ * @version 1.1
  */
 class ESitemapBehavior extends CBehavior {
 

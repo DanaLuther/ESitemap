@@ -35,7 +35,7 @@ Yii::import('ext.sitemap.*');
  * </pre>
  * 
  * @author Dana Luther <dluther@internationalstudent.com>
- * @version 1.0
+ * @version 1.1
  */
 class ESitemapAction extends CAction {
 
@@ -77,8 +77,25 @@ class ESitemapAction extends CAction {
 	 */
 	public $importListMethod;
 
+	/**
+	 * @var string[] Array of strings to be imported for access to models which
+	 * may be outside the standard import path
+	 * @since 1.1
+	 */
+	public $import;	
+	
 	public function initializeList()
 	{
+		// Ensure we have access to all the models we might need
+		if ($this->import !== null)
+		{
+			if (!is_array( $this->import) )
+				$this->import = array( $this->import );
+			
+			foreach( $this->import as $inc )
+				Yii::import( $inc );
+		}
+		
 		// Set the initial list of primary static pages
 		if ( $this->importListMethod !== null )
 		{
