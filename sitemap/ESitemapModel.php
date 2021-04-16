@@ -2,6 +2,9 @@
 /**
  * ESitemapModel.php File
  * 
+ * @copyright (c) Dana Luther
+ * @license https://opensource.org/licenses/BSD-2-Clause BSD-2-Clause
+ * @link https://www.yiiframework.com/extension/esitemap esitemap
  * @package ESitemap
  * @subpackage 
  * @created 09/03/2011 10:40:00
@@ -12,8 +15,7 @@
  * the actual data records and interprets that informaiton for use
  * by the sitemap processor
  *
- * @author Dana Luther <dluther@internationalstudent.com>
- * @copyright (c) Envisage International, Corp.
+ * @author Dana Luther <dana@lutherweb.com>
  * @version 1.1
  */
 class ESitemapModel extends CModel {

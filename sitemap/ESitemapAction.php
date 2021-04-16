@@ -5,6 +5,9 @@
  * Based on the post by Jacmoe at http://www.yiiframework.com/forum/index.php?/topic/670-yiic-sitemap-generation/page__pid__84510#entry84510
  *
  *
+ * @copyright (c) Dana Luther
+ * @license https://opensource.org/licenses/BSD-2-Clause BSD-2-Clause
+ * @link https://www.yiiframework.com/extension/esitemap esitemap
  * @package ESitemap
  */
 
@@ -34,7 +37,7 @@ Yii::import('ext.sitemap.*');
  *	}
  * </pre>
  * 
- * @author Dana Luther <dluther@internationalstudent.com>
+ * @author Dana Luther <dana@lutherweb.com>
  * @version 1.1
  */
 class ESitemapAction extends CAction {

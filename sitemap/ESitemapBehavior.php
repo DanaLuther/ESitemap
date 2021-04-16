@@ -2,13 +2,16 @@
 /**
  * ESitemapBehavior.php File
  *
+ * @copyright (c) Dana Luther
+ * @license https://opensource.org/licenses/BSD-2-Clause BSD-2-Clause
+ * @link https://www.yiiframework.com/extension/esitemap esitemap
  * @package ESitemap
  */
 
 /**
  * Description of ESitemapBehavior 
  *
- * @author Dana Luther <dluther@internationalstudent.com>
+ * @author Dana Luther <dana@lutherweb.com>
  * @version 1.1
  */
 class ESitemapBehavior extends CBehavior {
